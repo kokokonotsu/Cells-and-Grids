@@ -1,0 +1,28 @@
+:root{
+    --fontColor: #111;
+    --bgColor: #f1f1f1;
+}
+body{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+        "header header header"
+        ". main ."
+        "footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: red;
+}
+main{
+    grid-area: main;
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+    background-color: green;
+}
