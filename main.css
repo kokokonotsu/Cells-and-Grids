@@ -21,6 +21,18 @@ header{
 main{
     grid-area: main;
     background-color: blue;
+    display: table;
+    border-spacing: 1px;
+    border: 1px solid black;
+}
+main .row{
+    display: table-row;
+}
+main .row .cell{
+    display: table-cell;
+    width: 1vw;
+    height: 1vh;
+    background-color: white;
 }
 footer {
     grid-area: footer;
