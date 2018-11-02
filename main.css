@@ -16,11 +16,12 @@ body{
 }
 header{
     grid-area: header;
-    background-color: red;
+    background-color: white;
+    border: 1px dashed black;
 }
 main{
     grid-area: main;
-    background-color: blue;
+    background-color: black;
     display: table;
     border-spacing: 1px;
     border: 1px solid black;
@@ -36,5 +37,6 @@ main .row .cell{
 }
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: white;
+    border: 1px dashed black;
 }
