@@ -3,12 +3,12 @@ console.log(allRows);
 var cells = document.getElementsByClassName("cell");
 console.log(cells);
 var colorPicker = document.getElementById('colorPicker');
-console.log(colorPicker);
+console.log(colorPicker.value);
 var clearCellsButton = document.getElementById('clearCells');
 
 window.onload = function cellsOnLoad(){
     const cellsContainer = document.getElementById('cells-container');
-    for(i = 0; i < 25; i++){
+    for(i = 0; i < 26; i++){
         cellsContainer.insertAdjacentHTML('beforeend','<div class="row"> <div class="cell"></div> <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div>' );
     }
 }
@@ -28,6 +28,5 @@ function clearCells(){
 }
 }
 function colorThis(cell){
-    cell.style.backgroundColor = '#8c0000';
+    cell.style.backgroundColor = colorPicker.value;
 }
-clearCellsButton.addEventListener("click", clearCells());
