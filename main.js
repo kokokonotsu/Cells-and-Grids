@@ -2,7 +2,9 @@ var allRows = document.getElementsByClassName("row");
 console.log(allRows);
 var cells = document.getElementsByClassName("cell");
 var cellsArray = [];
-
+for(i = 0; i < cells.length; i++){
+    cellsArray.push(cells[i]);
+}
 console.log(cellsArray);
 var colorPicker = document.querySelector('#colorPicker');
 var defaultColor = '#000000';
@@ -45,7 +47,4 @@ function clearCells(){
 }
 function colorThis(cell){
     cell.style.backgroundColor = colorPicker.value;
-}
-for(i = 0; i < cells.length; i++){
-    cellsArray.push(cells[i]);
 }
