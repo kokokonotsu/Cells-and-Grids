@@ -35,6 +35,7 @@ main .row .cell{
     width: 3vw;
     height: 3vh;
     background-color: white;
+    border-radius: 10px;
 }
 footer {
     grid-area: footer;
