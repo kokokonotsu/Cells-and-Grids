@@ -2,7 +2,8 @@ var allRows = document.getElementsByClassName("row");
 console.log(allRows);
 var cells = document.getElementsByClassName("cell");
 console.log(cells);
-var colorPicker = document.getElementById('colorPicker');
+var colorPicker = document.querySelector('#colorPicker');
+var defaultColor = '#000000';
 console.log(colorPicker.value);
 var clearCellsButton = document.getElementById('clearCells');
 
